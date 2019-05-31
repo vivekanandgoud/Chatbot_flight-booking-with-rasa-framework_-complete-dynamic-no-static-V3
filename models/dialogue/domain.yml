@@ -1,0 +1,149 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_ask_depature
+- utter_ask_destination
+- utter_ask_date
+- action_get_Flights
+- utter_ask_connection
+- utter_confirm
+- action_save_origin
+- action_save_destination
+- action_save_date
+- action_save_connection
+- action_save_confirm
+- action_slot_reset
+- utter_help
+- utter_anything_else
+- utter_ofc
+- utter_bye
+- utter_default
+- action_restart
+- action_get_news
+- utter_ask_id
+- action_save_id
+config:
+  store_entities_as_slots: true
+entities:
+- category
+- departure
+- destination
+- date
+- connection
+- confirm
+- name
+- mobile_number
+- id
+forms: []
+intents:
+- greet:
+    use_entities: true
+- fine_ask:
+    use_entities: true
+- fine_ask1:
+    use_entities: true
+- ask_id:
+    use_entities: true
+- fine_ask_depature:
+    use_entities: true
+- fine_ask_destination:
+    use_entities: true
+- fine_ask_date:
+    use_entities: true
+- fine_ask_connection:
+    use_entities: true
+- confirmindex:
+    use_entities: true
+- fine_ask2:
+    use_entities: true
+- fine_ask3:
+    use_entities: true
+- fine_normal:
+    use_entities: true
+- thanks:
+    use_entities: true
+- bye:
+    use_entities: true
+slots:
+  category:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  confirm:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  connection:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  date:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  departure:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  destination:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  from:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  id:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  matches:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  mobile_number:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  name:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  row_no:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  to:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_connection:
+  - text: please confirm connection flight Yes or No?
+  - text: please choose connection flight Yes or No?
+  utter_ask_date:
+  - text: Sure. Please let me know date of travel?.
+  - text: Sure. Please let me know travel date?
+  utter_ask_depature:
+  - text: Sure. Please let me know Depature location?.
+  - text: Sure. Please let me know From location??
+  utter_ask_destination:
+  - text: Sure. Please let me know destination location?.
+  - text: Sure. Please let me know To location??
+  utter_ask_id:
+  - text: please enter your ID proof No. to continue?
+  - text: please enter your ID No.?
+  utter_bye:
+  - text: Bye and have a nice day
+  - text: Bbye and have a nice day
+  utter_default:
+  - text: I am not sure what you're aiming for
+  - text: I am sorry but I am not able to get you.
+  - text: My appologies but I am not able to get you
+  utter_greet:
+  - text: Hey, cool  what can i do for you..?.
+  - text: Hello, cool how can i help you!.
+  utter_ofc:
+  - text: I can definitely help you. let me know destination for {category}
+  - text: Surely, I can help you. The top 5 news of the {category}

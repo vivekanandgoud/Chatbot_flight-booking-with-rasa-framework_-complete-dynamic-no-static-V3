@@ -1,0 +1,321 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey bot"
+      },
+      {
+        "intent": "greet",
+        "text": "hello bot how are you"
+      },
+      {
+        "intent": "greet",
+        "text": "hi bot"
+      },
+      {
+        "intent": "greet",
+        "text": "namasthe bot"
+      },
+      {
+        "intent": "greet",
+        "text": "hey chitti"
+      },
+      {
+        "intent": "greet",
+        "text": "hello chitti"
+      },
+      {
+        "intent": "greet",
+        "text": "hi chitti"
+      },
+      {
+        "intent": "greet",
+        "text": "hi chitti how are you"
+      },
+      {
+        "intent": "greet",
+        "text": "hi how are you"
+      },
+      {
+        "intent": "greet",
+        "text": "hello bot how are you"
+      },
+      {
+        "intent": "greet",
+        "text": "hi bot how are you"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "hii"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "please let me know flights to chennai"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "get me flight tickets"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "help to book flight tockets"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "get me flight list available"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "flight tickets"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "tell me good flights"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "any flight available to chennai"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "flights shedule"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "let me know the flights available."
+      },
+      {
+        "intent": "fine_ask_depature",
+        "text": "Bangalore"
+      },
+      {
+        "intent": "fine_ask_depature",
+        "text": "bangalore"
+      },
+      {
+        "intent": "fine_ask_depature",
+        "text": "delhi"
+      },
+      {
+        "intent": "fine_ask_depature",
+        "text": "Delhi"
+      },
+      {
+        "intent": "fine_ask_depature",
+        "text": "kochi"
+      },
+      {
+        "intent": "fine_ask_depature",
+        "text": "Kochi"
+      },
+      {
+        "intent": "fine_ask_depature",
+        "text": "goa"
+      },
+      {
+        "intent": "fine_ask_destination",
+        "text": "pune"
+      },
+      {
+        "intent": "fine_ask_destination",
+        "text": "Pune"
+      },
+      {
+        "intent": "fine_ask_destination",
+        "text": "chennai"
+      },
+      {
+        "intent": "fine_ask_destination",
+        "text": "Chennai"
+      },
+      {
+        "intent": "fine_ask_destination",
+        "text": "Tirupathi"
+      },
+      {
+        "intent": "fine_ask_destination",
+        "text": "tirupathi"
+      },
+      {
+        "intent": "fine_ask_destination",
+        "text": "mumbai"
+      },
+      {
+        "intent": "fine_ask_date",
+        "text": "24/08/2019"
+      },
+      {
+        "intent": "fine_ask_date",
+        "text": "25/08/2019"
+      },
+      {
+        "intent": "fine_ask_date",
+        "text": "26/08/2019"
+      },
+      {
+        "intent": "fine_ask_date",
+        "text": "27/08/2019"
+      },
+      {
+        "intent": "fine_ask_date",
+        "text": "28/08/2019"
+      },
+      {
+        "intent": "fine_ask_connection",
+        "text": "Yes"
+      },
+      {
+        "intent": "fine_ask_connection",
+        "text": "yes"
+      },
+      {
+        "intent": "fine_ask_connection",
+        "text": "ok"
+      },
+      {
+        "intent": "fine_ask_connection",
+        "text": "OK"
+      },
+      {
+        "intent": "fine_ask_connection",
+        "text": "No"
+      },
+      {
+        "intent": "fine_ask_connection",
+        "text": "no"
+      },
+      {
+        "intent": "fine_ask_connection",
+        "text": "True"
+      },
+      {
+        "intent": "fine_ask_connection",
+        "text": "False"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I am doing great"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm doing great"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm fine"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm good"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "Doing good"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "Awesome"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "im fine"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "im good"
+      },
+      {
+        "intent": "confirmindex",
+        "text": "1"
+      },
+      {
+        "intent": "confirmindex",
+        "text": "2"
+      },
+      {
+        "intent": "confirmindex",
+        "text": "3"
+      },
+      {
+        "intent": "confirmindex",
+        "text": "4"
+      },
+      {
+        "intent": "confirmindex",
+        "text": "5"
+      },
+      {
+        "intent": "confirmindex",
+        "text": "6"
+      },
+      {
+        "intent": "ask_id",
+        "text": "A123456"
+      },
+      {
+        "intent": "ask_id",
+        "text": "B234567"
+      },
+      {
+        "intent": "ask_id",
+        "text": "C456123"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "bye",
+        "text": "No, I am good as of now. Bye"
+      },
+      {
+        "intent": "bye",
+        "text": "Bye"
+      },
+      {
+        "intent": "bye",
+        "text": "Bbye"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

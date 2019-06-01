@@ -62,6 +62,7 @@ python -m rasa_core.run -d models/dialogue -u models/current/nlu --endpoints end
 ```
 
 **OutPut_1**
+
 ```
 Bot loaded. Type a message and press enter (use '/stop' to exit):
 Your input ->  hey bot
@@ -72,7 +73,7 @@ Your input ->  movie
 
 Your input ->  give me mobiles info
 .....>> My appologies my knowlegdge limited to flight booking only.
-
+```
 
 
 **OutPut_2**

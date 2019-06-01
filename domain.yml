@@ -44,7 +44,7 @@ intents:
 - fine_ask
 - fine_ask1
 - ask_id
-- fine_ask_depature
+- fine_ask_departure
 - fine_ask_destination
 - fine_ask_date
 - fine_ask_connection
@@ -52,12 +52,13 @@ intents:
 - fine_ask2
 - fine_ask3
 - fine_normal
+- out_scope
 - thanks
 - bye
 
 actions:
 - utter_greet
-- utter_ask_depature
+- utter_ask_departure
 - utter_ask_destination
 - utter_ask_date
 - action_get_Flights
@@ -69,6 +70,7 @@ actions:
 - action_save_connection
 - action_save_confirm
 - action_slot_reset
+- action_default_fallback
 - utter_help
 - utter_anything_else
 - utter_ofc
@@ -78,33 +80,37 @@ actions:
 - action_get_news
 - utter_ask_id
 - action_save_id
+- utter_outscope
 
 templates:
   utter_greet:
-    - text: Hey, cool  what can i do for you..?. 
-    - text: Hello, cool how can i help you!.
-  utter_ask_depature:
-    - text: Sure. Please let me know Depature location?.
-    - text: Sure. Please let me know From location??
+    - text: .....>> Hey, cool  what can i do for you..?. 
+    - text: .....>> Hello, cool how can i help you!.
+  utter_ask_departure:
+    - text: .....>> Sure. Please Confirm the departure location?.
+    - text: .....>> Sure. Please Confirm the From location??
   utter_ask_destination:
-    - text: Sure. Please let me know destination location?.
-    - text: Sure. Please let me know To location?? 
+    - text: .....>> Sure. Please Confirm the destination location?.
+    - text: .....>> Sure. Please Confirm the To location?? 
   utter_ask_date:
-    - text: Sure. Please let me know date of travel?.
-    - text: Sure. Please let me know travel date?
+    - text: .....>> Sure. Please Confirm the date of travel?.
+    - text: .....>> Sure. Please Confirm the travel date?
   utter_ask_connection:
-    - text: please confirm connection flight Yes or No?
-    - text: please choose connection flight Yes or No?
+    - text: .....>> please confirm connection flight Yes or No?
+    - text: .....>> please choose connection flight Yes or No?
   utter_ask_id:
-    - text: please enter your ID proof No. to continue?
-    - text: please enter your ID No.?
+    - text: .....>> please enter your ID proof No. to continue?
+    - text: .....>> please enter your ID No.?
   utter_ofc:
-    - text: I can definitely help you. let me know destination for {category}
-    - text: Surely, I can help you. The top 5 news of the {category}
+    - text: .....>> I can definitely help you. let me know destination for {category}
+    - text: .....>> Surely, I can help you. The top 5 news of the {category}
   utter_bye:
-    - text: Bye and have a nice day
-    - text: Bbye and have a nice day
+    - text: .....>> Bye and have a nice day
+    - text: .....>> Bbye and have a nice day
   utter_default:
-    - text: I am not sure what you're aiming for
-    - text: I am sorry but I am not able to get you.
-    - text: My appologies but I am not able to get you
+    - text: .....>> I am not sure what you're aiming for
+    - text: .....>> I am sorry but I am not able to get you.
+    - text: .....>> My appologies but I am not able to get you
+  utter_outscope:
+    - text: .....>> Sorry my knowlegdge limited to flight booking only.
+    - text: .....>> My appologies my knowlegdge limited to flight booking only.

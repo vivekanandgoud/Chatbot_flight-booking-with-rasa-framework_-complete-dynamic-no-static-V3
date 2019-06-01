@@ -27,6 +27,21 @@ class SaveOrigin(Action):
 			#dispatcher.utter_message("Please enter a valid airport code")
 			#return [UserUtteranceReverted()]
 		return [SlotSet('from',orig)]
+
+class actiondefault(Action):
+        
+	def name(self):
+                
+		return 'action_default_fallback'
+		
+	def run(self, dispatcher, tracker, domain):
+                
+		#orig = (tracker.latest_message)['text']#tracker.latest_message.text#next(tracker.get_latest_entity_values("from"), None)
+		#print(orig)
+		#if not orig:
+		dispatcher.utter_message("...>> My appologies my knowlegdge limited to flight booking only.")
+			#return [UserUtteranceReverted()]
+		return []
 	
 
 

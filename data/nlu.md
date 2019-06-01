@@ -22,14 +22,19 @@
 
 
 ## intent:fine_ask_story_1
+
+- find flight from $departure to $destination
+- i just want to book flight ticket from $departure
 - hey i want to fly from $departure
-- please let me know flights $to chennai
+- please let me know flights $destination
+- hello can i find cheap flight from delhi to chennai
 - hey i want to fly $from delhi
 - help me to book flight from $departure to $destination on date $date
 
 ## intent:fine_ask_story_2
-- hey i want to fly from [delhi](departure) to [chennai](destination) on [25/08/2019](date)
-- hell i wanna book flight $from delhi $to chennai
+- hey i want to fly from [$departure]($departure) to [$destination](destination) on [$date](date)
+- hell i wanna book flight $from  $to 
+- hey buddy book flight $from $to on $date 
 
 ## intent:fine_ask
 - hey i want to fly 

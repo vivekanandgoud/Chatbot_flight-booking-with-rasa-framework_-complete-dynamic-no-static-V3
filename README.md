@@ -34,7 +34,7 @@ python -m rasa_nlu.server --path ./models
 ```
 python -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue -c policy.yml
 ```
-
+-----------------------------------------
 ```
 Epoch 94/100
 612/612 [==============================] - 0s 111us/sample - loss: 0.2292 - acc: 0.9412
@@ -51,7 +51,10 @@ Epoch 99/100
 Epoch 100/100
 612/612 [==============================] - 0s 98us/sample - loss: 0.2160 - acc: 0.9314
 2019-06-02 01:03:34 INFO     rasa_core.policies.keras_policy  - Done fitting keras policy model
+
+```
 **To run the custom action**
+
 ```
 python -m rasa_core_sdk.endpoint --actions actions
 ```
